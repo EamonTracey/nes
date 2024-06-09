@@ -1,4 +1,18 @@
-enum AddressingMode { Immediate };
+enum AddressingMode {
+    Accumulator,
+    Absolute,
+    AbsoluteXIndexed,
+    AbsoluteYIndexed,
+    Immediate,
+    Implied,
+    Indirect,
+    XIndexedIndirect,
+    IndirectYIndexed,
+    Relative,
+    ZeroPage,
+    ZeroPageXIndexed,
+    ZeroPageYIndexed
+};
 
 struct Instruction {
     void (*instruction)();
