@@ -1,6 +1,6 @@
-nes: src/cpu.h src/cpu.cc src/main.cc
+nes: src/cpu.h src/instruction.h src/cpu.cc src/instruction.cc src/main.cc
 	mkdir -p build
-	g++ -Wall -Werror src/main.cc -o build/nes
+	g++ -Wall -Werror src/cpu.cc src/instruction.cc src/main.cc -o build/nes
 
 .PHONY:
 format:

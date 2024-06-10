@@ -1,5 +1,9 @@
 #include "cpu.h"
 
+Cpu6502::Cpu6502() {}
+
+Cpu6502::~Cpu6502() {}
+
 void Cpu6502::Power() {
     accumulator = 0;
     register_x = 0;
